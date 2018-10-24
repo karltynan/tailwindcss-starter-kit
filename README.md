@@ -1,2 +1,2 @@
-# tailwindcss starter kit
-A starter kit for tailwind css
+# Tailwind CSS starter kit
+A really simple starter kit for Tailwind CSS
