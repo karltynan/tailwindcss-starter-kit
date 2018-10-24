@@ -1,0 +1,13 @@
+.cms h2, .cms h3, .cms h4, .cms h5, .cms h6,
+.cms p,
+.cms ul, .cms ol {
+	@apply mb-5;
+}
+
+.cms ul, .cms ol {
+	@apply list-reset;
+}
+
+.cms ul > li, .cms ol > li {
+	@apply mb-3;
+}
