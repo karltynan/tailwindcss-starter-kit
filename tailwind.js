@@ -259,8 +259,6 @@ module.exports = {
   */
 
   fontWeights: {
-    'hairline': 100,
-    'thin': 200,
     'light': 300,
     'normal': 400,
     'medium': 500,
@@ -381,6 +379,7 @@ module.exports = {
     '2': '2px',
     '4': '4px',
     '8': '8px',
+    '10': '10px',
   },
 
 
