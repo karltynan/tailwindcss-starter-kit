@@ -10,7 +10,7 @@
 </head>
 <body id="top" class="bg-black text-white text-center font-sans leading-normal">
 
-	<header class="lg:h-header bg-white lg:fixed lg:pin-t lg:pin-l lg:pin-r lg:overflow-hidden shadow">
+	<header class="bg-white lg:h-header lg:fixed lg:pin-t lg:pin-l lg:pin-r lg:overflow-hidden shadow z-10">
 		<div class="container lg:h-header flex flex-wrap items-center justify-between text-left mx-auto">
 			<a class="inline-block m-4 lg:m-0 lg:ml-4 font-bold trans-color trans-fast text-black text-lg lg:text-2xl hover:text-teal" href="/" title="Return to homepage">Tailwind CSS</a>
 			<div class="lg:hidden m-4">
@@ -41,27 +41,57 @@
 		<div class="lg:h-header"></div>
 		<main role="main" class="px-4 py-5">
 			<div class="container text-left mx-auto">
-				<div class="cms">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et augue est. Maecenas id accumsan tellus, vel pretium mi. Sed tristique ipsum eget nibh mollis, quis ornare turpis malesuada. Duis eu metus ac est accumsan maximus a ut nunc. Aenean accumsan vestibulum ipsum ac commodo. Mauris dolor elit, egestas vel lacus pretium, convallis sodales tortor. Nunc eu nisi tempor, placerat elit vel, tincidunt odio. Curabitur risus mauris, bibendum ut diam tristique, iaculis accumsan nisi. Suspendisse rhoncus ut nisi vitae ultrices. Phasellus ultrices tellus vel lacus facilisis, eu malesuada massa suscipit. Pellentesque eget congue felis, nec lobortis erat.</p>
-					<h2>Lorem ipsum dolor sit amet</h2>
-					<p>Donec sollicitudin, metus id mattis dapibus, nunc elit convallis velit, id gravida arcu urna sed diam. Vestibulum egestas a augue imperdiet vulputate. Nullam purus magna, laoreet eget augue sollicitudin, ultrices sollicitudin tellus. Fusce scelerisque est metus. Morbi tempor ornare sapien. Vestibulum nibh nisi, pretium id nunc quis, fringilla maximus nulla. Nunc fermentum, risus in volutpat posuere, purus massa ornare nunc, quis ornare massa nisl vel sapien. Suspendisse pharetra, ex pulvinar vulputate hendrerit, urna dolor posuere arcu, vel maximus felis lectus quis orci. In sed blandit velit. Aenean efficitur, purus id ultrices consectetur, urna ex lobortis ipsum, sit amet rutrum leo elit et enim.</p>
-					<h3>Lorem ipsum dolor sit amet</h3>
-					<p>Quisque ut sodales magna. Quisque nisi velit, cursus sit amet ultricies ac, maximus pretium velit. Ut varius lacus lorem, ut luctus dolor tempor sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus et massa non odio euismod condimentum. Phasellus eget sapien porta, sagittis lorem eget, accumsan velit. Duis tristique pulvinar felis a aliquam.</p>
-					<ul>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-					</ul>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et augue est. Maecenas id accumsan tellus, vel pretium mi. Sed tristique ipsum eget nibh mollis, quis ornare turpis malesuada. Duis eu metus ac est accumsan maximus a ut nunc. Aenean accumsan vestibulum ipsum ac commodo. Mauris dolor elit, egestas vel lacus pretium, convallis sodales tortor. Nunc eu nisi tempor, placerat elit vel, tincidunt odio. Curabitur risus mauris, bibendum ut diam tristique, iaculis accumsan nisi. Suspendisse rhoncus ut nisi vitae ultrices. Phasellus ultrices tellus vel lacus facilisis, eu malesuada massa suscipit. Pellentesque eget congue felis, nec lobortis erat.</p>
-					<h4>Lorem ipsum dolor sit amet</h4>
-					<ol>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-					</ol>
-					<p>Donec sollicitudin, metus id mattis dapibus, nunc elit convallis velit, id gravida arcu urna sed diam. Vestibulum egestas a augue imperdiet vulputate. Nullam purus magna, laoreet eget augue sollicitudin, ultrices sollicitudin tellus. Fusce scelerisque est metus. Morbi tempor ornare sapien. Vestibulum nibh nisi, pretium id nunc quis, fringilla maximus nulla. Nunc fermentum, risus in volutpat posuere, purus massa ornare nunc, quis ornare massa nisl vel sapien. Suspendisse pharetra, ex pulvinar vulputate hendrerit, urna dolor posuere arcu, vel maximus felis lectus quis orci. In sed blandit velit. Aenean efficitur, purus id ultrices consectetur, urna ex lobortis ipsum, sit amet rutrum leo elit et enim.</p>
+				<div class="bg-white mb-5 p-5 shadow-md">
+					<div class="cms">
+						<p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing</a> elit. Suspendisse rhoncus ut nisi vitae ultrices. Phasellus ultrices tellus vel lacus facilisis, eu malesuada massa suscipit. Pellentesque eget congue felis, nec lobortis erat.</p>
+						<h2>Lorem ipsum dolor sit amet</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus ut nisi vitae ultrices. Phasellus ultrices tellus vel lacus facilisis, eu malesuada massa suscipit. Pellentesque eget congue felis, nec lobortis erat.</p>
+						<blockquote>
+							Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing</a> elit. Suspendisse rhoncus ut nisi vitae ultrices. Phasellus ultrices tellus vel lacus facilisis, eu malesuada massa suscipit. Pellentesque eget congue felis, nec lobortis erat.
+							<footer>
+								<cite>John Smith, <a href="#">The Big Co</a></cite>
+							</footer>
+						</blockquote>
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus ut nisi vitae ultrices. Phasellus ultrices tellus vel lacus facilisis, eu malesuada massa suscipit. Pellentesque eget congue felis, nec lobortis erat.</p>
+						<ul>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+						</ul>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus ut nisi vitae ultrices. Phasellus ultrices tellus vel lacus facilisis, eu malesuada massa suscipit. Pellentesque eget congue felis, nec lobortis erat.</p>
+						<h4>Lorem ipsum dolor sit amet</h4>
+						<ol>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+						</ol>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus ut nisi vitae ultrices. Phasellus ultrices tellus vel lacus facilisis, eu malesuada massa suscipit. Pellentesque eget congue felis, nec lobortis erat.</p>
+					</div>
+				</div>
+				<div class="bg-black p-5 shadow-md">
+					<div class="cms cms--alt">
+						<p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing</a> elit. Suspendisse rhoncus ut nisi vitae ultrices. Phasellus ultrices tellus vel lacus facilisis, eu malesuada massa suscipit. Pellentesque eget congue felis, nec lobortis erat.</p>
+						<h2>Lorem ipsum dolor sit amet</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus ut nisi vitae ultrices. Phasellus ultrices tellus vel lacus facilisis, eu malesuada massa suscipit. Pellentesque eget congue felis, nec lobortis erat.</p>
+						<blockquote>
+							Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing</a> elit. Suspendisse rhoncus ut nisi vitae ultrices. Phasellus ultrices tellus vel lacus facilisis, eu malesuada massa suscipit. Pellentesque eget congue felis, nec lobortis erat.
+							<footer>
+								<cite>John Smith, <a href="#">The Big Co</a></cite>
+							</footer>
+						</blockquote>
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus ut nisi vitae ultrices. Phasellus ultrices tellus vel lacus facilisis, eu malesuada massa suscipit. Pellentesque eget congue felis, nec lobortis erat.</p>
+						<ul>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+						</ul>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus ut nisi vitae ultrices. Phasellus ultrices tellus vel lacus facilisis, eu malesuada massa suscipit. Pellentesque eget congue felis, nec lobortis erat.</p>
+						<h4>Lorem ipsum dolor sit amet</h4>
+						<ol>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+						</ol>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus ut nisi vitae ultrices. Phasellus ultrices tellus vel lacus facilisis, eu malesuada massa suscipit. Pellentesque eget congue felis, nec lobortis erat.</p>
+					</div>
 				</div>
 			</div>
 		</main>
@@ -71,45 +101,65 @@
 
 		<div class="container text-left mx-auto">
 			<nav class="flex flex-wrap -mx-2">
-				<section class="w-full md:w-1/3 mb-4 md:mb-0 px-2">
-					<h2 class="text-lg border-b mb-3 pb-3 border-grey-darker">Section title</h2>
+				<section class="w-full md:w-1/4 mb-4 md:mb-0 px-2">
+					<h2 class="text-lg border-b mb-3 pb-3 border-grey-darker">Find</h2>
 					<ul class="list-reset">
 						<li>
-							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">Link title</a>
+							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">Back end developer</a>
 						</li>
 						<li>
-							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">Link title</a>
+							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">Front end developer</a>
 						</li>
 						<li>
-							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">Link title</a>
+							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">Creative &amp; design</a>
+						</li>
+						<li>
+							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">Search all</a>
+						</li>
+						<li>
+							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">Newsletter</a>
 						</li>
 					</ul>
 				</section>
-				<section class="w-full md:w-1/3 mb-4 md:mb-0 px-2">
-					<h2 class="text-lg border-b mb-3 pb-3 border-grey-darker">Section title</h2>
+				<section class="w-full md:w-1/4 mb-4 md:mb-0 px-2">
+					<h2 class="text-lg border-b mb-3 pb-3 border-grey-darker">Post</h2>
 					<ul class="list-reset">
 						<li>
-							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">Link title</a>
+							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">Post</a>
 						</li>
 						<li>
-							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">Link title</a>
+							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">Pricing</a>
 						</li>
 						<li>
-							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">Link title</a>
+							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">Account</a>
 						</li>
 					</ul>
 				</section>
-				<section class="w-full md:w-1/3 px-2">
-					<h2 class="text-lg border-b mb-3 pb-3 border-grey-darker">Section title</h2>
+				<section class="w-full md:w-1/4 px-2">
+					<h2 class="text-lg border-b mb-3 pb-3 border-grey-darker">About us</h2>
 					<ul class="list-reset">
 						<li>
-							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">Link title</a>
+							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">About us</a>
 						</li>
 						<li>
-							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">Link title</a>
+							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">FAQs</a>
 						</li>
 						<li>
-							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">Link title</a>
+							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">Contact us</a>
+						</li>
+					</ul>
+				</section>
+				<section class="w-full md:w-1/4 px-2">
+					<h2 class="text-lg border-b mb-3 pb-3 border-grey-darker">Follow us</h2>
+					<ul class="list-reset">
+						<li>
+							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">Twitter</a>
+						</li>
+						<li>
+							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">LinkedIn</a>
+						</li>
+						<li>
+							<a class="block text-sm text-grey py-2 trans-color trans-fast hover:text-white" href="#">Send to a friend</a>
 						</li>
 					</ul>
 				</section>
