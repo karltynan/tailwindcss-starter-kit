@@ -11,6 +11,8 @@
  */
 @tailwind preflight;
 
+@import "preflight/reset.css";
+
 /**
  * This injects any component classes registered by plugins.
  *
