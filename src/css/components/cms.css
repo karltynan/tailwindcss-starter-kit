@@ -1,13 +1,70 @@
-.cms h2, .cms h3, .cms h4, .cms h5, .cms h6,
+.cms--alt {
+	@apply text-white;
+}
+
+.cms a {
+	@apply text-pink-dark font-bold trans-color trans-fast;
+}
+
+.cms a:hover {
+	@apply text-black;
+}
+
+.cms--alt a:hover {
+	@apply text-white;
+}
+
+.cms h2, .cms h3, .cms h4, .cms h5, .cms h6 {
+	@apply mb-4;
+}
+
 .cms p,
-.cms ul, .cms ol {
+.cms ul, .cms ol,
+.cms blockquote {
 	@apply mb-5;
 }
 
 .cms ul, .cms ol {
-	@apply list-reset;
+	@apply list-reset pl-5;
+}
+
+.cms ol {
+	counter-reset: cms-ol;
 }
 
 .cms ul > li, .cms ol > li {
-	@apply mb-3;
+	@apply mb-3 pl-6 relative;
+}
+
+.cms ul > li:before, .cms ol > li:before {
+	content: "";
+	@apply absolute pin-l pin-t;
+}
+
+.cms ul > li:before {
+	content: "";
+	@apply bg-teal rounded-full h-2 w-2 mt-2;
+}
+
+.cms ol > li:before {
+	content: counter(cms-ol)".";
+	@apply text-teal font-bold;
+	counter-increment: cms-ol;
+}
+
+.cms blockquote {
+	@apply border-l-3 border-teal text-lg pt-3 pb-3 pl-5 ml-8 mr-8;
+}
+
+.cms blockquote footer {
+	@apply text-sm text-grey-dark pt-4;
+}
+
+.cms blockquote footer:before {
+	content: "-";
+	@apply mr-1;
+}
+
+.cms blockquote footer cite {
+	@apply roman;
 }
