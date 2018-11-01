@@ -53,11 +53,31 @@
 }
 
 .cms blockquote {
-	@apply border-l-3 border-teal text-lg pt-3 pb-3 pl-5 ml-8 mr-8;
+	@apply border-l-3 border-teal text-lg pt-3 pb-3 pl-5 ml-10 mr-10;
 }
 
 .cms blockquote footer {
-	@apply text-sm text-grey-dark pt-4;
+	@apply text-sm text-grey-darker pt-4;
+}
+
+.cms--alt blockquote footer {
+	@apply text-grey;
+}
+
+.cms blockquote footer a {
+	@apply text-grey-darker font-normal underline;
+}
+
+.cms--alt blockquote footer a {
+	@apply text-grey;
+}
+
+.cms blockquote footer a:hover {
+	@apply text-grey-darker no-underline;
+}
+
+.cms--alt blockquote footer a:hover {
+	@apply text-grey;
 }
 
 .cms blockquote footer:before {
