@@ -7,6 +7,7 @@ var gulp = require('gulp');
 var del = require('del');
 var concat = require('gulp-concat');
 var filter = require('gulp-filter');
+var cssimport = require("gulp-cssimport");
 var postcss = require('gulp-postcss');
 var purgecss = require('gulp-purgecss');
 var rename = require('gulp-rename');
@@ -38,6 +39,7 @@ function css_build() {
 	del([cssOutputPath + '**/*'], { force: true });
 	// create new files
 	return gulp.src(cssSourcePath)
+		.pipe(cssimport())
 		.pipe(postcss([
 			require('tailwindcss'),
 			require('autoprefixer')
@@ -73,7 +75,7 @@ function css_copy() {
 }
 
 // js build
-function js_build () {
+function js_build() {
 	// delete old files
 	del([jsOutputPath + '**/*'], { force: true });
 	// create new files
