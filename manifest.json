@@ -1,0 +1,20 @@
+{
+	"short_name": "Website",
+	"name": "Website",
+	"start_url": "/",
+	"scope": "/",
+	//"icons": [
+	//	{
+	//		"src": "/icon-192.png",
+	//		"type": "image/png",
+	//		"sizes": "192x192"
+	//	},
+	//	{
+	//		"src": "/icon-512.png",
+	//		"type": "image/png",
+	//		"sizes": "512x512"
+	//	}
+	//],
+	"background_color": "#009ED8",
+	"theme_color": "#009ED8"
+}
