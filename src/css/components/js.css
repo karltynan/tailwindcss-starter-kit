@@ -1,0 +1,10 @@
+/* purgecss start ignore */
+
+@responsive {
+	.js .hide-on-js,
+	.no-js .show-on-js {
+		display: none;
+	}
+}
+
+/* purgecss end ignore */

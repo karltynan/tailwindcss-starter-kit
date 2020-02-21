@@ -1,0 +1,7 @@
+/* purgecss start ignore */
+
+.anchor {
+	@apply block relative invisible;
+}
+
+/* purgecss end ignore */

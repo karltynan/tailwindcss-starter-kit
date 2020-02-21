@@ -1,0 +1,15 @@
+/* purgecss start ignore */
+
+.btn {
+	@apply inline-block inline-flex items-center justify-center bg-black border-2 border-black text-white px-6 py-1 text-center rounded-md transition-all;
+}
+
+.btn:hover {
+	@apply bg-black border-black text-white;
+}
+
+.btn[disabled] {
+	@apply opacity-25 cursor-not-allowed;
+}
+
+/* purgecss end ignore */
