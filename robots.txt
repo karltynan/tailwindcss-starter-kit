@@ -1,0 +1,12 @@
+Sitemap: https://www.domain.com/sitemap
+
+User-agent: *
+Disallow: /aspnet_client/
+Disallow: /bin/
+Disallow: /config/
+Disallow: /data/
+Disallow: /install/
+Disallow: /macroscripts/
+Disallow: /masterpages/
+Disallow: /umbraco/
+Disallow: /usercontrols/
