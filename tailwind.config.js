@@ -605,7 +605,7 @@ module.exports = {
     padding: ['responsive'],
     placeholderColor: ['responsive', 'focus'],
     pointerEvents: ['responsive'],
-    position: ['responsive'],
+    position: ['responsive', 'focus'],
     resize: ['responsive'],
     stroke: ['responsive'],
     strokeWidth: ['responsive'],
