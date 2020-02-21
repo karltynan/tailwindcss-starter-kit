@@ -1,5 +1,11 @@
 @tailwind base;
+@import "preflight/reset.css";
 
 @tailwind components;
+@import "components/js.css";
+@import "components/anchor.css";
+@import "components/buttons.css";
+@import "components/alerts.css";
+@import "components/forms.css";
 
 @tailwind utilities;
